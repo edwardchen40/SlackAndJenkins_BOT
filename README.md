@@ -1,11 +1,12 @@
-# SlackAndJenkins_BOT
-
+# slack-bot
 ## Bot Configuration
-1. Go to https://yourteam.slack.com/apps
-2. Search input for "Bots"
-3. Add Configurations
-4. Give Bot a username and click the "Add bot integration"
-5. There is a API Token and keep in mind
+1. Go to https://api.slack.com/applications/new
+2. Click "Create New App" button and give it a name
+3. Choose Development Slack Team
+4. You will get a Client ID and Client Secret
+5. Add the Redirect URL, you can use the ngrok https://ngrok.com/
+6. Add the Request URL, you can use the ngrok https://ngrok.com/
+7. visiting the login page, http://localhost:3000/login
 
 ## Jenkins
 1. Install Build Authorization Token Root Plugin
@@ -17,5 +18,5 @@
 2. cd slack-bot
 3. npm init
 4. npm install --save botkit
-5. vim bot.js and paste the slack's API Token
+5. vim littlebot.js and paste the Client ID and Client Secret
 6. job_url Insert your Jenkins's URL
